@@ -1,0 +1,198 @@
+:root {
+    --primary-blue: #0A0F36; /* Used for header, footer background, and main text */
+    --secondary-blue: #6978C3; /* Used for primary navigation link color */
+    --light-gray: #F2F2F2; /* Used for some section backgrounds */
+    --white: #FFFFFF;
+    --red: #FF0000;
+}
+
+/* --- Global & Typography Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--primary-blue);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--red);
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: var(--primary-blue);
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+/* Explicit class for the active page link (Replaces pseudo-class logic) */
+.active-page {
+    color: var(--red);
+    font-weight: bold;
+}
+
+/* --- Main Content Sections --- */
+.hero-image {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 5%;
+    text-align: center;
+}
+
+/* --- Index Page Specifics (Gallery) --- */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 5%;
+    background-color: var(--light-gray);
+}
+
+.gallery img {
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.history-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: var(--light-gray);
+}
+
+.history {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Styling for the red box around the 'Our History' text */
+.history h2 {
+    color: var(--red);
+    padding: 10px 0;
+}
+
+.history-section img {
+    width: 40%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* --- Contact Page Specifics --- */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 50px 5%;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.contact {
+    flex: 1;
+}
+
+.contact-span {
+    font-weight: bold;
+    color: var(--secondary-blue);
+}
+
+.contact p a {
+    color: var(--primary-blue);
+}
+
+.contact-section iframe {
+    flex: 1;
+    max-width: 600px;
+    height: 350px;
+    border: 1px solid #ccc;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.social img {
+    height: 24px;
+    width: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
