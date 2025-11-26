@@ -1,9 +1,9 @@
 :root {
-    --primary-blue: #0A0F36; /* Used for header, footer background, and main text */
-    --secondary-blue: #6978C3; /* Used for primary navigation link color */
-    --light-gray: #F2F2F2; /* Used for some section backgrounds */
-    --white: #FFFFFF;
-    --red: #FF0000;
+    --primary-blue: #090346; /* Used for header, footer background, and main text */
+    --secondary-blue: #2414DB; /* Used for primary navigation link color */
+    --light-gray: #EBEBF0; /* Used for some section backgrounds */
+    --white: #FFFFFF; /* Used for text and backgrounds */
+    --red: #F50808;
 }
 
 /* --- Global & Typography Styles --- */
